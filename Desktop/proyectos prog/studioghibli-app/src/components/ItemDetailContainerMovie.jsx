@@ -12,9 +12,8 @@ const ItemDetailContainerMovie = () => {
 
         loadFilm(idFilm)
             .then(result => setMovie(result))
-            .catch(error => console(error))
-            
-    }, [])
+            .catch(error => console(error))     
+    }, [idFilm])
 
     return(
         <div className='container'>

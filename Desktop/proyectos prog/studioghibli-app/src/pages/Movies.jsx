@@ -8,12 +8,10 @@ const Movies = () => {
     const [movies, setMovies] = useState([]);
     const { films } = useParams();
     useEffect(() => {
-        
         loadMain(films)
         .then(result => setMovies(result))
         .catch(error => console.log(error))
-       
-    }, [])
+    }, [films])
 
     useEffect(() => {
         return (() => {
