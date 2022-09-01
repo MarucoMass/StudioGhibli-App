@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/StudioGhibli-App/static/css/main.1545153f.css",
-    "main.js": "/StudioGhibli-App/static/js/main.3ba8dc5f.js",
+    "main.js": "/StudioGhibli-App/static/js/main.0738e7e2.js",
     "static/media/logo.png": "/StudioGhibli-App/static/media/logo.a4d05b324b87a084c931.png",
     "index.html": "/StudioGhibli-App/index.html",
     "main.1545153f.css.map": "/StudioGhibli-App/static/css/main.1545153f.css.map",
-    "main.3ba8dc5f.js.map": "/StudioGhibli-App/static/js/main.3ba8dc5f.js.map"
+    "main.0738e7e2.js.map": "/StudioGhibli-App/static/js/main.0738e7e2.js.map"
   },
   "entrypoints": [
     "static/css/main.1545153f.css",
-    "static/js/main.3ba8dc5f.js"
+    "static/js/main.0738e7e2.js"
   ]
 }
