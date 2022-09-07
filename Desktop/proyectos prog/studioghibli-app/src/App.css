@@ -7,9 +7,6 @@ body{
     font-family: 'Oswald', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
-    /* background-color: rgb(72, 174, 240);
-    background-color: rgb(1, 163, 236); */
-    /* background: linear-gradient(to top right, #007DB8, #01A3EC, #00A0EB,  #00A7F5, #4AC0F7); */
     background: linear-gradient(to right top, #007DB8, #01A3EC, #00A0EB,  #00A7F5);
 }
 a {
@@ -152,6 +149,7 @@ header .header-container .nav-bar .nav-list .nav-burguer.active .bar::after{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .container .container_home{
     max-width: 1200px;
@@ -200,7 +198,7 @@ header .header-container .nav-bar .nav-list .nav-burguer.active .bar::after{
 .container_title{
   width: 100%;
   text-align: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.5vmin);
   color: white;
   /* margin-top: 30px; */
   text-transform: uppercase;
@@ -224,6 +222,8 @@ header .header-container .nav-bar .nav-list .nav-burguer.active .bar::after{
   justify-content: center;
   /* align-items: center; */
   flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 50px;
 }
 .card{
   background-color: white;
@@ -337,7 +337,7 @@ header .header-container .nav-bar .nav-list .nav-burguer.active .bar::after{
  .singleMovie_box .singleMovie_box_content{
   flex: 1;
   padding: 15px;
-  /* margin: 15px; */
+  margin-bottom: 30px;
   color: white;
 }
 .singleMovie_box .singleMovie_box_content .singleMovie_title{
@@ -394,6 +394,19 @@ header .header-container .nav-bar .nav-list .nav-burguer.active .bar::after{
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer p{
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 /* mediaquerie */

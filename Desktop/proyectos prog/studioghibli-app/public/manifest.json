@@ -1,6 +1,6 @@
 {
-  "short_name": "Studio-Ghibli",
-  "name": "StudioGhibli-App",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "./png-transparent-catbus-studio-ghibli-anime-ghibli-museum-animated-film-anime-mammal-carnivoran-manga.png",

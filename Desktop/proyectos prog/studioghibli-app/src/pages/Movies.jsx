@@ -1,14 +1,16 @@
 import ItemListMovies from '../components/ItemListMovies';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { loadMain } from '../api/db';
+// import { loadMain } from '../api/db';
+import { getFilms } from '../components/api';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 const Movies = () => {
 
     const [movies, setMovies] = useState([]);
     const { films } = useParams();
     useEffect(() => {
-        loadMain(films)
+        getFilms(films)
         .then(result => setMovies(result))
         .catch(error => console.log(error))
     }, [films])
@@ -38,7 +40,7 @@ const Movies = () => {
                         </div>
                     </div>
                 }
-            
+            <Footer />
         </section>
     );
 }

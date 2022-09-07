@@ -1,5 +1,6 @@
 import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 const Home = () => {
 
     return(
@@ -11,6 +12,7 @@ const Home = () => {
                 <p>This is a fanpage made with the Studio Ghibli API</p>
             <Link to={'/films'} className='home_link'>Take a look at the movies</Link>
             </div>
+        <Footer />
         </section>
     );
 }
