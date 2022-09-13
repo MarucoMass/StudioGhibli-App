@@ -1,6 +1,7 @@
-export const loadMain = async (db) => {
+const baseURL = 'https://ghibliapi.herokuapp.com/';
+export const loadFilms = async (films) => {
     try {
-        const data = await fetch(`https://ghibliapi.herokuapp.com/${db}`);
+        const data = await fetch(baseURL+films);
 
         if(data.status === 200){
             const result = await data.json()
@@ -17,17 +18,17 @@ export const loadMain = async (db) => {
         console.log(error)
     }
 }
-export const loadFilm = async (id) => {
+export const loadFilm = async (film) => {
     try {
-        const dataMovie = await fetch(`https://ghibliapi.herokuapp.com/films/${id}`);
+        const data = await fetch(baseURL+'films/'+film);
 
-        if(dataMovie.status === 200){
-            const resultMovie = await dataMovie.json()
-			return resultMovie;
+        if(data.status === 200){
+            const result = await data.json()
+			return result;
 
-		} else if(dataMovie.status === 401){
+		} else if(data.status === 401){
 			console.log('Wrong key');
-		} else if(dataMovie.status === 404){
+		} else if(data.status === 404){
 			console.log('Not found');
 		} else {
 			console.log('There was an error');

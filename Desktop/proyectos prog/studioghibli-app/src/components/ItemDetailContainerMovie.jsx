@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetailMovie from "./ItemDetailMovie";
-// import { loadFilm } from "../api/db";
-import { getFilmsID } from './api';
+import { loadFilm } from "../api/db";
 import Footer from './Footer';
 const ItemDetailContainerMovie = () => {
 
@@ -11,7 +10,7 @@ const ItemDetailContainerMovie = () => {
 
     useEffect(() => {
 
-        getFilmsID(idFilm)
+        loadFilm(idFilm)
             .then(result => setMovie(result))
             .catch(error => console(error))     
     }, [idFilm])
